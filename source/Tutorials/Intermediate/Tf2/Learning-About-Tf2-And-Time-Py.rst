@@ -37,7 +37,7 @@ It should look like shown below:
 
 .. code-block:: python
 
-   trans = self._tf_buffer.lookup_transform(
+   trans = self.tf_buffer.lookup_transform(
       to_frame_rel,
       from_frame_rel,
       now)
@@ -71,7 +71,7 @@ To fix this, edit your code on line 76 as shown below (return the ``timeout`` pa
 
 .. code-block:: python
 
-   trans = self._tf_buffer.lookup_transform(
+   trans = self.tf_buffer.lookup_transform(
       to_frame_rel,
       from_frame_rel,
       now,
